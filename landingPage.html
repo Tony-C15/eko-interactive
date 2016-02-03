@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html style="height:100%;width:100%" lang="en">
+<head>
+	<link rel="icon" href="favicon.ico">
+	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<title>Tony Cheng</title>
+</head>
+<body style="height:100%;width:100%">
+	<div class="hamburger-menu" style="height: 100%; width: 400px; float: left;"> <!-- TODO: write css for hamburger-menu -->
+		<h1 style="text-align: center; margin: 0 auto;">Hamburger Menu</h1>
+	</div>
+	<div class="level-selection"> <!-- TODO write css for level-selection -->
+		<button id="hamburger-button">HAMBURGER BUTTON</button>
+		<h3 class="page-header"  style="text-align: center; margin: 0 auto;">Create Your Level</h3>
+		<div>
+			<img src="12631159_10207840356500556_1810021964_o.jpg" style="max-width: 400px; max-height: 400px">
+			<img src="12655951_10207840356300551_983391710_o.jpg" style="max-width: 400px; max-height: 400px">
+			<img src="12656547_10207840355900541_731266561_o.jpg" style="max-width: 400px; max-height: 400px">
+			<img src="12656295_10207840355580533_1940404309_o.jpg" style="max-width: 400px; max-height: 400px">
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		$('#hamburger-button').click(function() {
+			var visibility = $('.hamburger-menu').css('display') == 'none' ? 'block' :'none';
+			$('.hamburger-menu').css('display', visibility);
+		});
+	});
+	</script>
+</body>
